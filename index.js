@@ -1,6 +1,6 @@
 
-const {byteToTracks,byteToChunk} = require('./reader.states.js');
-const {dataToChunk,tracksToChunk} = require('./writer.states.js');
+const {byteToTracks,byteToChunk} = require('./reader.chunk.js');
+const {dataToChunk,tracksToChunk} = require('./writer.chunk.js');
 /*
 let data = {
   t: 1754080932,
