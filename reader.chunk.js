@@ -143,7 +143,7 @@ module.exports = {byteToTracks,byteToChunk};
 /*let data = fs.readFileSync("output.chunk.bin");
 const stateData = byteToChunk(data);
 console.log(JSON.stringify(stateData));*/
-
+/*
 let data = fs.readFileSync("output.tracks.bin");
 const tracksData = byteToTracks(data);
-console.log(JSON.stringify(tracksData));
+console.log(JSON.stringify(tracksData));*/
