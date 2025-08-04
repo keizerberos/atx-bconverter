@@ -1,0 +1,19 @@
+{
+  "name": "atx-bconverter",
+  "version": "0.0.1",
+  "description": "Use to struct json objects to array buffer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keizerberos/atx-bconverter.git"
+  },
+  "author": "atxdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keizerberos/atx-bconverter/issues"
+  },
+  "homepage": "https://github.com/keizerberos/atx-bconverter#readme"
+}
