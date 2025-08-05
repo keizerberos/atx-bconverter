@@ -54,7 +54,7 @@ function uuidToBuffer(str, maxsize) {
 }
 function oneByte(data) {
 	const buffer = Buffer.alloc(1);
-	buffer.writeUInt8(data, 0);
+	buffer.writeInt8(data, 0);
 	return buffer;
 }
 function toByte(data) {

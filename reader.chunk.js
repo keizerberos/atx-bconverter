@@ -6,7 +6,7 @@ function longFromBuffer(buffer, from, to) {
 }
 function oneByteRead(buffer, pos) {
     const buf = Buffer.from(buffer.subarray(pos, pos + 1));
-    return buf.readUInt8(0);
+    return buf.readInt8(0);
 }
 function doubleFromBuffer(buffer,pos) {
     const buf = Buffer.from(buffer.subarray(pos, pos+8));
