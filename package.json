@@ -1,7 +1,7 @@
 {
   "name": "atx-bconverter",
-  "version": "0.0.7",
-  "description": "Use to struct json objects to array buffer",
+  "version": "1.0.0",
+  "description": "Use to struct json specified gps objects to array buffer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

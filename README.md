@@ -1,3 +1,3 @@
-# Buffer converter
+# Buffer converter 1.0.0
 ## Description
-Use to struct json objects to array buffer 
+Use to struct specific gps json objects to array buffer 
