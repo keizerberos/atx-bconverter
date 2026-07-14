@@ -190,7 +190,7 @@ function checkType(valor, tipo) {
   let min = 0;
   let max = 0;
 
-  switch (tipo) {
+  switch (Number(tipo)) {
     case 0: // int (32-bit signed)
       min = -2147483648; max = 2147483647; break;
     case 1: // long (64-bit signed)
@@ -217,25 +217,25 @@ function checkStates(chunks){
 		chunk.states.forEach(state=>{
 			//console.log("state.value,state.type",state.type,state.value);
 			//if (typeof state.value === 'string'){
-			if (state.type == 0) {
+			if (Number(state.type) == 0) {
 				if (isNaN(state.value)){
 						validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"is not a number"});}
 			}
-			if (state.type == 8) {
+			if (Number(state.type) == 8) {
 				if (typeof state.value !== "boolean"){
 						validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"is not a boolean"});}
 			}
-			if (state.type == 2) {
+			if (Number(state.type) == 2) {
 						if (isNaN(state.value)){
 							 validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"invalid type"});}
-			}else if (state.type == 3) {
+			}else if (Number(state.type) == 3) {
 						if (state.value.length>200 ){
 								validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"max length limit"});
 						}
 						if (!isNaN(state.value)){
 								validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"is not string"});
 						}
-			}else if (state.type == 5) {
+			}else if (Number(state.type) == 5) {
 						if (!isNaN(state.value)){
 							 validations.push({"state":state.state,"type":state.type,"value":state.value,"check":"invalid type"});}
 			else if (state.value.length!=1){
@@ -251,7 +251,7 @@ function checkStates(chunks){
 function truncStates(chunks){
 	chunks.forEach(chunk => {
 		chunk.states.forEach(state=>{
-			state.value = truncType(state.value,state.type);
+			state.value = truncType(state.value,Number(state.type));
 		});
 	});
 	return chunks;
