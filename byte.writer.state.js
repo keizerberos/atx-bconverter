@@ -93,7 +93,7 @@ function statesToBuffer(dataArray) {
     let mainStream = Buffer.alloc(0);
     dataArray.forEach(d => {
         const buf_data = stateToBuffer(d);
-        console.log("intToBuffer(buf_data.length)",intToBuffer(buf_data.length));
+        //console.log("intToBuffer(buf_data.length)",intToBuffer(buf_data.length));
         mainStream = Buffer.concat([mainStream, intToBuffer(buf_data.length), buf_data]);
     });
     console.log("checksumByte(mainStream)",checksumByte(mainStream));
